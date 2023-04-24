@@ -6,9 +6,6 @@
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
 }
 
 .topNav {
@@ -56,7 +53,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 video {
