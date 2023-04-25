@@ -8,8 +8,9 @@ function Home() {
             <div className="topNav">
                 <nav>
                     <p className="app-name">Menstrual Cycle 🤰🏽</p>
-                    <button onClick={() => window.location.href="/tracker"}>View estimated menstrual cycle</button>
-                    <button onClick={() => window.location.href="/info"}>Info on your menstrual cycle</button>
+                    <button onClick={() => window.location.href="/tracker"}>Period calculator</button>
+                    <button onClick={() => window.location.href="/calendar"}>Pregnancy calendar</button>
+                    <button onClick={() => window.location.href="/info"}>Tips & advice</button>
                     <button onClick={() => window.location.href="/consultancy"}>Consult a gynecologist</button>
                     <button onClick={() => window.location.href="/about"}>About us</button>
                     <button onClick={() => window.location.href="/rate"}>Rate us</button>
