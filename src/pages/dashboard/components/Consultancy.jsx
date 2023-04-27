@@ -12,7 +12,7 @@ function Consultancy() {
             <li><a href="https://clinixhealthcare.com.ng/" className="clinic">Clinix Diagnostic Centre</a></li>
             <li><a href="https://www.lifebridgeclinic.com/page/" className="clinic">Lifebridge Clinic</a></li>
             <li><a href="https://medison-specialist-womens-hospital-fertility.business.site/" className="clinic">Medison Specialist Women's Hospital</a></li>
-            <button onClick={() => window.location.href="/"}>Home</button>
+            <button onClick={() => window.location.href="/home"}>Home</button>
         </div>
     )
 }
