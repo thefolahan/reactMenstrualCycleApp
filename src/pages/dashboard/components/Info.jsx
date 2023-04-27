@@ -165,7 +165,7 @@ function Info() {
                 3. Irritable bowel syndrome (IBS). IBS causes cramping, bloating, and gas. Your IBS symptoms may get worse right before your period. <br/>
                 4. Bladder pain syndrome. Women with bladder pain syndrome are more likely to have painful cramps during PMS.
             </text>
-            <button onClick={() => window.location.href="/"}>Home</button>
+            <button onClick={() => window.location.href="/home"}>Home</button>
         </div>
     );
 }
