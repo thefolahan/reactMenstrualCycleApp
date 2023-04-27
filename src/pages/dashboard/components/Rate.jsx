@@ -55,7 +55,7 @@ function Rate() {
             <textarea placeholder="Enter your feedback" style={styles.textarea} />
             <button style={styles.button} onClick={handleSubmit}>Submit</button>
             {submitted && <p>Feedback submitted</p>}
-            <button onClick={() => (window.location.href = "/")}>Home</button>
+            <button onClick={() => (window.location.href = "/home")}>Home</button>
         </div>
     );
 }
