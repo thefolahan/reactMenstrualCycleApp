@@ -49,9 +49,10 @@ function MenstrualTracker() {
                     </label>
                     <label>
                         Enter your age:
-                        <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
+                        <input type="number" value={age} onChange={(e) => setAge(e.target.value)} min="0" max="150" />
+                        {age && age < 8 && <span className="error">You are too young</span>}
                     </label>
-                    <button onClick={() => setShowInput(false)}>Continue</button>
+                    <button onClick={() => setShowInput(age < 8)} disabled={age && age < 8}>Continue</button>
                 </form>
             ) : (
                 <div ref={resultRef}>
@@ -75,7 +76,7 @@ function MenstrualTracker() {
                 </div>
             )}
             <button onClick={handleScreenshot}>Screenshot Result</button>
-            <button onClick={() => (window.location.href = "/")}>Home</button>
+            <button onClick={() => (window.location.href = "/home")}>Home</button>
         </div>
     );
 }
