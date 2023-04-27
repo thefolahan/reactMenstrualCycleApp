@@ -15,7 +15,7 @@ function About() {
                 As he continues to grow and develop his skills, he looks forward to creating even more innovative web pages that make a difference in people's lives. <br/>
                 <li><a href="https://github.com/9KICKS?tab=overview&from=2023-04-01&to=2023-04-23" className="github">Follow on GitHub</a></li>
             </text>
-            <button onClick={() => window.location.href="/"}>Home</button>
+            <button onClick={() => window.location.href="/home"}>Home</button>
         </div>
     )
 }
