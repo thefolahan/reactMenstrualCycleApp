@@ -36,7 +36,7 @@ class PregnancyTracker extends React.Component {
             return (
                 <div>
                     <p className="pregnancy-page">Your estimated due date is: {this.state.estimatedDueDate.toDateString()}
-                        <button onClick={() => (window.location.href = "/")}>Home</button>
+                        <button onClick={() => (window.location.href = "/home")}>Home</button>
                     </p>
                 </div>
             );
@@ -58,7 +58,7 @@ class PregnancyTracker extends React.Component {
                         <button onClick={this.calculateDueDate}>See Due Date</button>
                     </div>
                 }
-                <button onClick={() => (window.location.href = "/")}>Home</button>
+                <button onClick={() => (window.location.href = "/home")}>Home</button>
             </div>
         );
     }
