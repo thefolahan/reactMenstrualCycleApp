@@ -22,13 +22,13 @@ function Home() {
             <footer>
                 <ul>
                     <h1>Connect with us:</h1>
-                    <li><a href="https://twitter.com/thefolahan">
+                    <li><a href="https://twitter.com/thefolahan" target='_blank' rel="noreferrer">
                             <button>Twitter</button>
                     </a></li>
-                    <li><a href="https://www.instagram.com/thefolahan/">
+                    <li><a href="https://www.instagram.com/thefolahan/" target='_blank' rel="noreferrer">
                             <button>Instagram</button>
                     </a></li>
-                    <li><a href="https://github.com/9KICKS?tab=overview&from=2023-04-01&to=2023-04-26">
+                    <li><a href="https://github.com/9KICKS?tab=overview&from=2023-04-01&to=2023-04-26" target='_blank' rel="noreferrer">
                             <button>GitHub</button>
                     </a></li>
                 </ul>
