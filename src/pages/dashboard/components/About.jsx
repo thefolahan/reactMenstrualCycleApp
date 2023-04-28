@@ -13,7 +13,7 @@ function About() {
                 He enjoys developing web pages that are both visually appealing and functional, and is constantly seeking new ways to improve his craft. <br/>
                 When he's not coding, Folahan enjoys spending time with friends and family, listening to music, watching movies, watching sports, and gaming. <br/>
                 As he continues to grow and develop his skills, he looks forward to creating even more innovative web pages that make a difference in people's lives. <br/>
-                <li><a href="https://github.com/9KICKS?tab=overview&from=2023-04-01&to=2023-04-23" className="github">Follow on GitHub</a></li>
+                <li><a href="https://github.com/9KICKS?tab=overview&from=2023-04-01&to=2023-04-23" className="github" target='_blank' rel="noreferrer">Follow on GitHub</a></li>
             </text>
             <button onClick={() => window.location.href="/home"}>Home</button>
         </div>
