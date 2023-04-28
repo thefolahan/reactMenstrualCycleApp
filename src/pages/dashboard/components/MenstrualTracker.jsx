@@ -11,13 +11,23 @@ function MenstrualTracker() {
     const [showInput, setShowInput] = useState(true);
     const [firstName, setFirstName] = useState('');
     const [age, setAge] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
     const resultRef = useRef(null);
 
     const calculateCycle = (e) => {
         e.preventDefault();
         const periodCycle = parseInt(cycleLength);
-        const nextPeriod = Moment(lastPeriodDate).add(periodCycle, 'days');
-        const ovulationDay = Moment(lastPeriodDate).add(periodCycle - 14, 'days');
+        const currentDate = Moment();
+        const lastPeriod = Moment(lastPeriodDate);
+        const difference = currentDate.diff(lastPeriod, 'days');
+
+        if (difference > 28) {
+            setErrorMessage("Irregular period detected.\nTry not to freak out.\nIt's normal to miss a period once in a while.\nIt could just be your body's response to stress or changes in your eating or exercise habits.");
+            return;
+        }
+
+        const nextPeriod = lastPeriod.add(periodCycle, 'days');
+        const ovulationDay = lastPeriod.add(periodCycle - 14, 'days');
 
         setNextPeriodDate(nextPeriod.format('Do MMMM YYYY'));
         setOvulationDate(ovulationDay.format('Do MMMM YYYY'));
@@ -73,6 +83,7 @@ function MenstrualTracker() {
                             <p>{firstName}'s approximate ovulation day: {ovulationDate}</p>
                         </div>
                     )}
+                    {errorMessage && <p>{errorMessage}</p>}
                 </div>
             )}
             <button onClick={handleScreenshot}>Screenshot Result</button>
